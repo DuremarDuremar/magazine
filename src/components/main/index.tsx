@@ -2,6 +2,7 @@ import React from "react";
 
 import { Content, Logo, Title, Shape } from "./style";
 import { ReactComponent as SvgLogo } from "../../assets/logo.svg";
+import shape from "../../assets/shape.png";
 
 const Main = () => {
   return (
@@ -9,7 +10,7 @@ const Main = () => {
       <Logo>
         <div>
           <SvgLogo />
-          <h2>EVARUGS</h2>
+          <h1>EVARUGS</h1>
         </div>
         <ul>
           <li>отзывы</li>
@@ -18,8 +19,14 @@ const Main = () => {
         </ul>
       </Logo>
       <article>
-        <Title>2</Title>
-        <Shape>3</Shape>
+        <Title>
+          <h2>Инновационные коврики для автомобиля</h2>
+          <h5>в вашем городе</h5>
+          <button>ЗАКАЗАТЬ</button>
+        </Title>
+        <Shape>
+          <img src={shape} alt="shape" />
+        </Shape>
       </article>
     </Content>
   );
