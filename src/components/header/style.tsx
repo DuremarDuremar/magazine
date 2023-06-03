@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.header`
   height: 77px;
+  padding: 0 80px;
   background: linear-gradient(
     269.91deg,
     rgba(46, 49, 146, 0.7) 0%,
@@ -23,10 +24,12 @@ export const Block = styled.div<{ cg: string }>`
   justify-content: center;
   column-gap: ${({ cg }) => `${cg}px`};
   font-size: 15px;
+  flex: 33%;
 
   ${(props) =>
     props.cg === "12" &&
     `
+    justify-content:start;
     span{
         cursor: pointer;
     }
@@ -36,8 +39,9 @@ export const Block = styled.div<{ cg: string }>`
     props.cg === "15" &&
     `
     font-size:14px;
+    justify-content:end;
     span{
-        max-width: 150px;
+        max-width: 100px;
     }
    
     `}
