@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/header/header";
+import { Header, Main } from "../components";
 
 import { Global, Content } from "./style";
 
@@ -9,6 +9,7 @@ const App = () => {
       <Global />
       <Content>
         <Header />
+        <Main />
       </Content>
     </>
   );
