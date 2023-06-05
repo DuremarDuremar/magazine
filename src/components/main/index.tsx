@@ -1,10 +1,9 @@
 import React from "react";
 
 import Fon from "./fon";
-import { Content, Logo, Title, Shape, Back } from "./style";
+import { Content, Logo, Title, Shape } from "./style";
 import { ReactComponent as SvgLogo } from "../../assets/logo.svg";
 import shape from "../../assets/shape.png";
-import back from "../../assets/back.png";
 
 const Main = () => {
   return (

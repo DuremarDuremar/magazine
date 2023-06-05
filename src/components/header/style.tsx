@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.header`
+  max-width: 1360;
   height: 77px;
   padding: 0 80px;
   background: linear-gradient(

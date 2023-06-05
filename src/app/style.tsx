@@ -59,7 +59,7 @@ img {
 `;
 
 export const Content = styled.main`
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* width: 100%; */
   font-family: "Roboto", sans-serif;
   font-weight: 300;

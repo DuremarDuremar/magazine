@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.section`
+  max-width: 1360;
   padding: 46px 78px 0;
 
   article {
