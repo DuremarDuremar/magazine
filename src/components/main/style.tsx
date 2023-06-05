@@ -15,6 +15,7 @@ export const Logo = styled.div`
   div,
   ul {
     display: flex;
+    align-items: center;
   }
   h1 {
     font-style: italic;
@@ -39,6 +40,7 @@ export const Title = styled.div`
   flex-direction: column;
   justify-content: center;
   flex: 50%;
+  z-index: 1;
 
   h2 {
     max-width: 676px;
@@ -77,4 +79,13 @@ export const Back = styled.div`
   left: 38%;
   top: 12%;
   background-size: cover;
+`;
+
+export const Dot = styled.div<{
+  top: string;
+  left: string;
+}>`
+  position: absolute;
+  top: ${({ top }) => `${top}px`};
+  left: ${({ left }) => `${left}px`};
 `;

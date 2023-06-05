@@ -1,5 +1,6 @@
 import React from "react";
 
+import Fon from "./fon";
 import { Content, Logo, Title, Shape, Back } from "./style";
 import { ReactComponent as SvgLogo } from "../../assets/logo.svg";
 import shape from "../../assets/shape.png";
@@ -28,9 +29,7 @@ const Main = () => {
         <Shape>
           <img src={shape} alt="shape" />
         </Shape>
-        <Back>
-          <img src={back} alt="back" />
-        </Back>
+        <Fon />
       </article>
     </Content>
   );
