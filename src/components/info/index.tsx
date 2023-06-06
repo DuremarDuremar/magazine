@@ -1,5 +1,8 @@
 import React from "react";
 import { Content, Title, Desc, Block } from "./style";
+import desk_1 from "../../assets/desk_1.jpg";
+import desk_2 from "../../assets/desk_2.jpg";
+import desk_3 from "../../assets/desk_3.jpg";
 
 const Info = () => {
   return (
@@ -11,7 +14,7 @@ const Info = () => {
       </Title>
       <Desc>
         <Block>
-          <img src="" alt="" />
+          <img src={desk_1} alt="desk_1" />
           <h3>МАТЕРИАЛ</h3>
           <div>
             Коврики EVA всесезонные и отличаются уникальной поверхностью
@@ -21,7 +24,7 @@ const Info = () => {
           </div>
         </Block>
         <Block>
-          <img src="" alt="" />
+          <img src={desk_2} alt="desk_2" />
           <h3>ОТЛИЧИЯ</h3>
           <div>
             Резиновые коврики загибаются и лезут на педали. EVA коврики такого
@@ -31,7 +34,7 @@ const Info = () => {
           </div>
         </Block>
         <Block>
-          <img src="" alt="" />
+          <img src={desk_3} alt="desk_3" />
           <h3>РАСЦВЕТКА</h3>
           <div>
             Автомобильные коврики EVA можно заказать и в индивидуальных размерах
