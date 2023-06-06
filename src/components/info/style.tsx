@@ -1,6 +1,12 @@
 import styled from "styled-components";
 
-export const Content = styled.div`
-  max-width: 1360;
-  padding: 40px 80px;
+export const Content = styled.section``;
+
+export const Title = styled.div``;
+
+export const Desc = styled.div`
+  display: flex;
+  column-gap: 61px;
 `;
+
+export const Block = styled.div``;

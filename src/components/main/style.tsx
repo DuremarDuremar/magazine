@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
 export const Content = styled.section`
-  max-width: 1360;
-  padding: 46px 78px 0;
-
   article {
     display: flex;
-    position: relative;
   }
 `;
 
@@ -73,20 +69,4 @@ export const Title = styled.div`
 export const Shape = styled.div`
   flex: 50%;
   z-index: 1;
-`;
-
-export const Back = styled.div`
-  position: absolute;
-  left: 38%;
-  top: 12%;
-  background-size: cover;
-`;
-
-export const Dot = styled.div<{
-  top: string;
-  left: string;
-}>`
-  position: absolute;
-  top: ${({ top }) => `${top}px`};
-  left: ${({ left }) => `${left}px`};
 `;
