@@ -40,11 +40,10 @@ export const Review = styled.div`
   width: 536px;
   height: 247px;
   background-color: #fff;
-
-  /* display: flex;
+  display: flex !important;
   flex-direction: column;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   p {
     background: red;
   }
