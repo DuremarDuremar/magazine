@@ -1,40 +1,51 @@
 import styled from "styled-components";
 import Slider from "react-slick";
 
-export const Content = styled.div`
-  max-width: 1360;
-  padding: 50px 278px 0;
+export const Content = styled.section`
+  width: 1360px;
+  height: 357px;
+  background: linear-gradient(
+    94.31deg,
+    rgba(212, 20, 90, 0.25) 0.96%,
+    rgba(46, 49, 146, 0.25) 104.83%
+  );
+  overflow: hidden;
 `;
 
 export const Wrapper = styled(Slider)`
   text-align: center;
-  padding: 20px;
-  div {
-    width: 536px;
-    height: 247px;
-    padding: 0;
-  }
-  p {
-    /* transition: all 0.2s ease; */
-    background: red;
-    /* width: 100%;
-    height: 80px;
-    margin: 30px 0; */
-    /* transition: all 0.5s; */
-  }
+  margin: 38px 27% 72px;
 
   .slick-track {
     display: flex;
+    /* column-gap: 70px; */
+  }
+  .slick-slide {
   }
   .slick-center {
     z-index: 1;
+    margin: 0px 70px 0;
+
     p {
       background: yellow;
-      margin: 0;
 
-      max-width: initial;
+      /* max-width: initial; */
     }
   }
   .slick-current {
+  }
+`;
+
+export const Review = styled.div`
+  width: 536px;
+  height: 247px;
+  background-color: #fff;
+
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  p {
+    background: red;
   }
 `;

@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Content, Wrapper } from "./style";
+import { Content, Wrapper, Review } from "./style";
 
 const Reviews = () => {
   const settings = {
@@ -14,7 +14,7 @@ const Reviews = () => {
     focusOnSelect: true,
     slidesToShow: 1,
     centerMode: true,
-    centerPadding: "15%",
+    // centerPadding: "15%",
     speed: 500,
     arrows: false,
   };
@@ -22,15 +22,30 @@ const Reviews = () => {
   return (
     <Content>
       <Wrapper {...settings}>
-        <div>
-          <p>1111111111</p>
-        </div>
-        <div>
-          <p>2222222222222</p>
-        </div>
-        <div>
-          <p>33333333333333</p>
-        </div>
+        <Review>
+          <img src="#" alt="" />
+          <p>
+            Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше
+            заказов вам!!! Большое спасибо!
+          </p>
+          <h6>Константин В.</h6>
+        </Review>
+        <Review>
+          <img src="#" alt="" />
+          <p>
+            Покупала у ребят коврики для Хундай солярис в подарок молодому
+            человеку. Все очень понравилось. Буду советовать только вас.
+          </p>
+          <h6>Вера К.</h6>
+        </Review>
+        <Review>
+          <img src="#" alt="" />
+          <p>
+            Спасибо, все приехало, поставил. Результатом доволен, в машине
+            супер! Заказывал на Ниссан.
+          </p>
+          <h6>Николай П.</h6>
+        </Review>
       </Wrapper>
     </Content>
   );
