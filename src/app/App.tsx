@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Main, Info, Layout, Reviews } from "../components";
+import { Header, Main, Info, Layout, Reviews, Footer } from "../components";
 
 import { Global, Content } from "./style";
 
@@ -14,6 +14,7 @@ const App = () => {
           <Info />
         </Layout>
         <Reviews />
+        <Footer />
       </Content>
     </>
   );

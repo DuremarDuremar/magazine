@@ -10,6 +10,7 @@ export const Content = styled.section`
     rgba(46, 49, 146, 0.25) 104.83%
   );
   overflow: hidden;
+  margin-top: 60px;
 `;
 
 export const Wrapper = styled(Slider)`
@@ -96,5 +97,25 @@ export const Review = styled.div`
       0% 25%
     );
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  h6 {
+    position: absolute;
+    bottom: 10%;
+    color: #8e8e8e;
+  }
+  p:after {
+    content: "";
+    width: 130px;
+    height: 5px;
+    background: linear-gradient(
+      94.31deg,
+      rgba(212, 20, 90, 0.25) 0.96%,
+      rgba(46, 49, 146, 0.25) 104.83%
+    );
+    display: block;
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
