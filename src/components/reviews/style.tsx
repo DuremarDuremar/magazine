@@ -14,19 +14,24 @@ export const Content = styled.section`
 
 export const Wrapper = styled(Slider)`
   text-align: center;
-  margin: 0 27%;
+  margin: 0 25%;
+  /* margin-left: 25%;
+  margin-right: 25%; */
   position: relative;
-  top: 17%;
+  top: 25%;
 
   .slick-track {
     display: flex;
-    /* column-gap: 70px; */
+    column-gap: 70px;
   }
   .slick-slide {
   }
   .slick-center {
     z-index: 1;
-    margin: 0px 70px 0;
+    div {
+      opacity: 1;
+    }
+    /* padding: 0px 70px 0; */
 
     p {
       /* background: yellow; */
@@ -40,7 +45,7 @@ export const Wrapper = styled(Slider)`
 
 export const Review = styled.div`
   width: 536px;
-  height: 247px;
+  height: 187px;
   background-color: #fff;
   display: flex !important;
   flex-direction: column;
@@ -48,14 +53,21 @@ export const Review = styled.div`
   justify-content: center;
   position: relative;
   cursor: pointer;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
+  opacity: 0.4;
+
   p {
+    width: 445px;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
     /* background: red; */
   }
   div {
     display: flex;
     justify-content: center;
     position: absolute;
-    top: -20%;
+    top: -35%;
     width: 95px;
     height: 108px;
     background: #d4145a;
