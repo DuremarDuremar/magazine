@@ -1,6 +1,8 @@
 import React from "react";
-import { Content, Blocks, Block } from "./style";
+import { Content, Blocks, Block, Dot } from "./style";
 import { ReactComponent as SvgFooterInsta } from "../../assets/footerInsta.svg";
+import { ReactComponent as SvgDot9 } from "../../assets/dot_9.svg";
+import { ReactComponent as SvgDot10 } from "../../assets/dot_10.svg";
 
 const Footer = () => {
   return (
@@ -23,6 +25,12 @@ const Footer = () => {
           <p>ваш город</p>
         </Block>
       </Blocks>
+      <Dot top="50" left="20">
+        <SvgDot9 />
+      </Dot>
+      <Dot top="0" left="1000">
+        <SvgDot10 />
+      </Dot>
     </Content>
   );
 };
