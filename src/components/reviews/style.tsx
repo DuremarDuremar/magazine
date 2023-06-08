@@ -14,7 +14,9 @@ export const Content = styled.section`
 
 export const Wrapper = styled(Slider)`
   text-align: center;
-  margin: 38px 27% 72px;
+  margin: 0 27%;
+  position: relative;
+  top: 17%;
 
   .slick-track {
     display: flex;
@@ -27,7 +29,7 @@ export const Wrapper = styled(Slider)`
     margin: 0px 70px 0;
 
     p {
-      background: yellow;
+      /* background: yellow; */
 
       /* max-width: initial; */
     }
@@ -44,7 +46,43 @@ export const Review = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  cursor: pointer;
   p {
-    background: red;
+    /* background: red; */
+  }
+  div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: -20%;
+    width: 95px;
+    height: 108px;
+    background: #d4145a;
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    );
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  img {
+    position: absolute;
+    top: 1px;
+    width: 93px;
+    height: 106px;
+    -webkit-clip-path: polygon(
+      50% 0%,
+      100% 25%,
+      100% 75%,
+      50% 100%,
+      0% 75%,
+      0% 25%
+    );
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 `;

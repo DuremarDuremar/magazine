@@ -1,6 +1,9 @@
 import React from "react";
 
 import { Content, Wrapper, Review } from "./style";
+import rev1 from "../../assets/otz1.png";
+import rev2 from "../../assets/otz2.png";
+import rev3 from "../../assets/otz3.png";
 
 const Reviews = () => {
   const settings = {
@@ -23,7 +26,9 @@ const Reviews = () => {
     <Content>
       <Wrapper {...settings}>
         <Review>
-          <img src="#" alt="" />
+          <div>
+            <img src={rev1} alt="img" />
+          </div>
           <p>
             Коврики супер!!! Качество на высшем уровне!!! Удачи и побольше
             заказов вам!!! Большое спасибо!
@@ -31,7 +36,9 @@ const Reviews = () => {
           <h6>Константин В.</h6>
         </Review>
         <Review>
-          <img src="#" alt="" />
+          <div>
+            <img src={rev2} alt="img" />
+          </div>
           <p>
             Покупала у ребят коврики для Хундай солярис в подарок молодому
             человеку. Все очень понравилось. Буду советовать только вас.
@@ -39,7 +46,9 @@ const Reviews = () => {
           <h6>Вера К.</h6>
         </Review>
         <Review>
-          <img src="#" alt="" />
+          <div>
+            <img src={rev3} alt="img" />
+          </div>
           <p>
             Спасибо, все приехало, поставил. Результатом доволен, в машине
             супер! Заказывал на Ниссан.
