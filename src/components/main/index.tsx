@@ -1,10 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { Content, Logo, Title, Shape } from "./style";
 import { ReactComponent as SvgLogo } from "../../assets/logo.svg";
 import shape from "../../assets/shape.png";
 
-const Main = () => {
+interface IProps {
+  setModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Main: FC<IProps> = ({ setModal }) => {
   return (
     <Content>
       <Logo>
@@ -22,7 +26,7 @@ const Main = () => {
         <Title>
           <h2>Инновационные коврики для автомобиля</h2>
           <h5>в вашем городе</h5>
-          <button>ЗАКАЗАТЬ</button>
+          <button onClick={() => setModal(true)}>ЗАКАЗАТЬ</button>
         </Title>
         <Shape>
           <img src={shape} alt="shape" />

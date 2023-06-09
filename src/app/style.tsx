@@ -58,13 +58,13 @@ img {
 }
 `;
 
-export const Content = styled.main`
+export const Content = styled.main<{ modal: boolean }>`
   /* max-width: 1440px; */
   /* width: 100%; */
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   background-color: #ffffff;
-  border: 1px solid black;
-  position: relative;
+  /* border: 1px solid black; */
+  position: ${(props) => (props.modal ? "fixed" : "relative")};
   overflow: hidden;
 `;
