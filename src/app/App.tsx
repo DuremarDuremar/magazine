@@ -25,7 +25,7 @@ const App = () => {
         </Layout>
         <Reviews />
         <Footer />
-        {modal && <Modal />}
+        {modal && <Modal setModal={setModal} />}
       </Content>
     </>
   );

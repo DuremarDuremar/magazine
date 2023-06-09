@@ -1,9 +1,14 @@
-import React from "react";
+import React, { FC } from "react";
 import { Wrapper, Content } from "./style";
-const Modal = () => {
+
+interface IProps {
+  setModal: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Modal: FC<IProps> = ({ setModal }) => {
   return (
-    <Content>
-      <Wrapper>Modal</Wrapper>
+    <Content onClick={() => setModal(false)}>
+      <Wrapper onClick={(e) => e.stopPropagation()}>Modal</Wrapper>
     </Content>
   );
 };

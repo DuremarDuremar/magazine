@@ -9,10 +9,16 @@ export const Content = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 1180.27px;
+  height: 392.18px;
+  border: 1px solid black;
 `;
