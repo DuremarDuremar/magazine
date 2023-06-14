@@ -18,13 +18,18 @@ export const Content = styled.div`
 
 export const Wrapper = styled.div`
   background: url(${bc});
+  background-size: cover;
+  background-repeat: no-repeat;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
   width: 1180.27px;
   height: 392.18px;
-  border: 1px solid black;
+  box-shadow: 0px 0px 35px rgba(212, 20, 90, 0.25);
+  border-radius: 15px;
+  cursor: default;
   h2 {
     margin-top: 42px;
   }
@@ -49,10 +54,24 @@ export const Wrapper = styled.div`
     padding-left: 21px;
     padding-bottom: 6px;
   }
+  button {
+    width: 169.49px;
+    height: 42.06px;
+    background: linear-gradient(96.12deg, #d4145a -21.03%, #3d5bf5 103.56%);
+    border-radius: 9px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 3px;
+    margin-top: 42px;
+  }
 `;
 
 export const Inputs = styled.div`
   display: flex;
   column-gap: 25px;
   margin-top: 60px;
+  margin-top: 45px;
 `;

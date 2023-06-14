@@ -22,6 +22,7 @@ const Modal: FC<IProps> = ({ setModal }) => {
           rows={10}
           placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
         ></textarea>
+        <button>отправить</button>
       </Wrapper>
     </Content>
   );
