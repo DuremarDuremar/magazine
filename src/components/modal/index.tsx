@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Wrapper, Content } from "./style";
+import { Wrapper, Content, Inputs } from "./style";
 
 interface IProps {
   setModal: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,7 +8,21 @@ interface IProps {
 const Modal: FC<IProps> = ({ setModal }) => {
   return (
     <Content onClick={() => setModal(false)}>
-      <Wrapper onClick={(e) => e.stopPropagation()}>Modal</Wrapper>
+      <Wrapper onClick={(e) => e.stopPropagation()}>
+        <h2>ФОРМА ЗАЯВКИ</h2>
+        <Inputs>
+          <input type="name" placeholder="Ваше имя" />
+          <input type="email" placeholder="Ваш e-mail" />
+        </Inputs>
+
+        <textarea
+          name=""
+          id=""
+          cols={30}
+          rows={10}
+          placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"
+        ></textarea>
+      </Wrapper>
     </Content>
   );
 };
