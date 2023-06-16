@@ -6,9 +6,10 @@ import shape from "../../assets/shape.png";
 
 interface IProps {
   setModal: React.Dispatch<React.SetStateAction<boolean>>;
+  res1080: boolean;
 }
 
-const Main: FC<IProps> = ({ setModal }) => {
+const Main: FC<IProps> = ({ setModal, res1080 }) => {
   return (
     <Content>
       <Logo>
@@ -16,14 +17,16 @@ const Main: FC<IProps> = ({ setModal }) => {
           <SvgLogo />
           <h1>EVARUGS</h1>
         </div>
-        <ul>
-          <li>отзывы</li>
-          <li>что это?</li>
-          <li>контакты</li>
-        </ul>
+        {res1080 && (
+          <ul>
+            <li>отзывы</li>
+            <li>что это?</li>
+            <li>контакты</li>
+          </ul>
+        )}
       </Logo>
       <article>
-        <Title>
+        <Title res1080={res1080}>
           <h2>Инновационные коврики для автомобиля</h2>
           <h5>в вашем городе</h5>
           <button onClick={() => setModal(true)}>ЗАКАЗАТЬ</button>

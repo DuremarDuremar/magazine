@@ -32,7 +32,9 @@ export const Logo = styled.div`
   }
 `;
 
-export const Title = styled.div`
+export const Title = styled.div<{
+  res1080: boolean;
+}>`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,8 +44,14 @@ export const Title = styled.div`
   h2 {
     max-width: 676px;
     font-weight: 900;
-    font-size: 50px;
-    line-height: 59px;
+    @media (min-width: 1080px) {
+      font-size: 50px;
+      line-height: 59px;
+    }
+    @media (max-width: 1080px) {
+      font-size: 40px;
+      line-height: 49px;
+    }
   }
   h5 {
     font-size: 24px;

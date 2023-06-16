@@ -25,7 +25,7 @@ const App = () => {
       <Content modal={modal}>
         <Header res1080={res1080} />
         <Layout>
-          <Main setModal={setModal} />
+          <Main setModal={setModal} res1080={res1080} />
           <Info />
         </Layout>
         <Reviews />
