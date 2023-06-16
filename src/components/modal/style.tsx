@@ -66,6 +66,11 @@ export const Wrapper = styled.div`
     color: #ffffff;
     padding-bottom: 3px;
     margin-top: 42px;
+    transition: all 1s ease;
+    :hover {
+      box-shadow: 0px 3px 6px 1px #3d5bf5;
+      transform: translateY(-3px);
+    }
   }
 `;
 

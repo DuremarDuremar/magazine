@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 import {
   Header,
   Main,
@@ -12,13 +13,17 @@ import {
 import { Global, Content } from "./style";
 
 const App = () => {
+  const res1080 = useMediaQuery({ query: "(min-width: 1080px)" });
+  const res730 = useMediaQuery({ query: "(min-width: 730px)" });
+  const res520 = useMediaQuery({ query: "(min-width: 520px)" });
+
   const [modal, setModal] = useState(false);
 
   return (
     <>
       <Global />
       <Content modal={modal}>
-        <Header />
+        <Header res1080={res1080} />
         <Layout>
           <Main setModal={setModal} />
           <Info />

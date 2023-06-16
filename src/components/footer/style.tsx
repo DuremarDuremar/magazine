@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const Content = styled.footer`
   margin: 20px auto 10px;
-  padding-top: 160px;
-  width: 1255px;
+  padding: 160px 20px 0px;
+  max-width: 1295px;
+  width: 100%;
   height: 284px;
   display: flex;
   justify-content: center;
