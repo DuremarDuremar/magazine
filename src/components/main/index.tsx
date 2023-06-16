@@ -26,7 +26,7 @@ const Main: FC<IProps> = ({ setModal, res1080 }) => {
         )}
       </Logo>
       <article>
-        <Title res1080={res1080}>
+        <Title>
           <h2>Инновационные коврики для автомобиля</h2>
           <h5>в вашем городе</h5>
           <button onClick={() => setModal(true)}>ЗАКАЗАТЬ</button>

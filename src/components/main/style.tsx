@@ -32,9 +32,7 @@ export const Logo = styled.div`
   }
 `;
 
-export const Title = styled.div<{
-  res1080: boolean;
-}>`
+export const Title = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,17 +58,27 @@ export const Title = styled.div<{
     margin: 10px 0 20px;
   }
   button {
-    width: 179px;
-    height: 53px;
+    @media (min-width: 1080px) {
+      width: 179px;
+      height: 53px;
+      font-size: 20px;
+      line-height: 23px;
+      padding: 15px 0;
+    }
+    @media (max-width: 1080px) {
+      width: 141px;
+      height: 42px;
+      font-size: 15px;
+      line-height: 18px;
+      padding: 6px 0;
+    }
     background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
     border-radius: 7px;
     color: #ffffff;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 900;
-    font-size: 20px;
-    line-height: 23px;
-    padding: 15px 0;
+
     transition: all 1s ease;
     :hover {
       box-shadow: 0px 3px 6px 1px #3d5bf5;

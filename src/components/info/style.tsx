@@ -6,8 +6,15 @@ export const Title = styled.div`
   h2 {
     text-align: center;
     font-weight: 400;
-    font-size: 50px;
-    line-height: 59px;
+    @media (min-width: 1080px) {
+      font-size: 50px;
+      line-height: 59px;
+    }
+    @media (max-width: 1080px) {
+      font-size: 40px;
+      line-height: 47px;
+    }
+
     padding-top: 30px;
     a {
       background-color: #b90160;
@@ -25,8 +32,16 @@ export const Title = styled.div`
 
 export const Desc = styled.div`
   display: flex;
-  column-gap: 61px;
+
   padding-top: 100px;
+  @media (min-width: 1080px) {
+    flex-direction: row;
+    column-gap: 61px;
+  }
+  @media (max-width: 1080px) {
+    flex-direction: column;
+    row-gap: 61px;
+  }
 `;
 
 export const Block = styled.div`
@@ -53,5 +68,10 @@ export const Block = styled.div`
     font-size: 14px;
     line-height: 16px;
     color: #767676;
+  }
+  @media (max-width: 1080px) {
+    img {
+      height: 189px;
+    }
   }
 `;

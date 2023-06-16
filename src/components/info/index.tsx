@@ -9,7 +9,7 @@ const Info = () => {
     <Content>
       <Title>
         <h2>
-          Что такое <a href="#">EVA</a> коврики?
+          Что такое <a href="https://www.google.com/">EVA</a> коврики?
         </h2>
       </Title>
       <Desc>

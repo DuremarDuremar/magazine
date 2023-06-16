@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.div`
   max-width: 1360;
-  height: 1580px;
+  min-height: 1580px;
   padding: 50px 78px 0;
   position: relative;
 `;
