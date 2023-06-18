@@ -1,25 +1,24 @@
-import React from "react";
+import React, { FC } from "react";
 
 import { Content, Wrapper, Review } from "./style";
 import rev1 from "../../assets/otz1.png";
 import rev2 from "../../assets/otz2.png";
 import rev3 from "../../assets/otz3.png";
 
-const Reviews = () => {
+interface IProps {
+  res1080: boolean;
+}
+
+const Reviews: FC<IProps> = ({ res1080 }) => {
   const settings = {
-    // className: "center",
-    // centerMode: true,
-    // infinite: true,
-    // initialSlide: 0,
-    // slidesToShow: 1,
-    // speed: 500,
-    // slidesToScroll: 1,
     focusOnSelect: true,
-    slidesToShow: 1,
-    centerMode: true,
-    // centerPadding: "15%",
+    slidesToShow: res1080 ? 1 : 3,
+    centerMode: res1080 ? true : false,
     speed: 500,
     arrows: false,
+    infinite: true,
+    vertical: res1080 ? false : true,
+    verticalSwiping: res1080 ? false : true,
   };
 
   return (

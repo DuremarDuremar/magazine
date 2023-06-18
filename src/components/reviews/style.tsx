@@ -2,8 +2,14 @@ import styled from "styled-components";
 import Slider from "react-slick";
 
 export const Content = styled.section`
-  width: 1360px;
-  height: 357px;
+  max-width: 1360px;
+  @media (min-width: 1080px) {
+    height: 357px;
+  }
+  @media (max-width: 1080px) {
+    height: 948px;
+  }
+
   background: linear-gradient(
     94.31deg,
     rgba(212, 20, 90, 0.25) 0.96%,
@@ -15,15 +21,25 @@ export const Content = styled.section`
 
 export const Wrapper = styled(Slider)`
   text-align: center;
-  margin: 0 25%;
-  /* margin-left: 25%;
-  margin-right: 25%; */
   position: relative;
-  top: 25%;
+  @media (min-width: 1080px) {
+    top: 25%;
+    margin: 0 26%;
+  }
+  @media (max-width: 1080px) {
+    top: 10%;
+  }
 
   .slick-track {
     display: flex;
-    column-gap: 70px;
+    @media (min-width: 1080px) {
+      flex-direction: row;
+      column-gap: 70px;
+    }
+    @media (max-width: 1080px) {
+      flex-direction: column;
+      row-gap: 109px;
+    }
   }
   .slick-slide {
   }
@@ -32,12 +48,7 @@ export const Wrapper = styled(Slider)`
     div {
       opacity: 1;
     }
-    /* padding: 0px 70px 0; */
-
     p {
-      /* background: yellow; */
-
-      /* max-width: initial; */
     }
   }
   .slick-current {
@@ -45,30 +56,53 @@ export const Wrapper = styled(Slider)`
 `;
 
 export const Review = styled.div`
-  width: 536px;
-  height: 187px;
+  max-width: 536px;
+  width: 100%;
+  min-height: 187px;
   background-color: #fff;
-  display: flex !important;
+  @media (min-width: 1080px) {
+    display: flex !important;
+  }
+  @media (max-width: 1080px) {
+  }
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   cursor: pointer;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.25);
-  opacity: 0.4;
+  @media (min-width: 1080px) {
+    opacity: 0.4;
+  }
+  @media (max-width: 1080px) {
+    opacity: 1;
+  }
 
   p {
-    width: 445px;
+    max-width: 445px;
+    width: 100%;
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    /* background: red; */
+    @media (min-width: 1080px) {
+    }
+    @media (max-width: 1080px) {
+      padding-top: 63px;
+      margin: 0px auto;
+    }
   }
   div {
     display: flex;
     justify-content: center;
     position: absolute;
     top: -35%;
+    @media (min-width: 1080px) {
+    }
+    @media (max-width: 1080px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
     width: 95px;
     height: 108px;
     background: #d4145a;
@@ -102,6 +136,12 @@ export const Review = styled.div`
     position: absolute;
     bottom: 10%;
     color: #8e8e8e;
+    @media (min-width: 1080px) {
+    }
+    @media (max-width: 1080px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
   p:after {
     content: "";

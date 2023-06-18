@@ -28,7 +28,7 @@ const App = () => {
           <Main setModal={setModal} res1080={res1080} />
           <Info />
         </Layout>
-        <Reviews />
+        <Reviews res1080={res1080} />
         <Footer />
         {modal && <Modal setModal={setModal} />}
       </Content>
