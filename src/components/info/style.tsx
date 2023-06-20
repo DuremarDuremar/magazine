@@ -14,6 +14,10 @@ export const Title = styled.div`
       font-size: 40px;
       line-height: 47px;
     }
+    @media (max-width: 760px) {
+      font-size: 20px;
+      line-height: 23px;
+    }
 
     padding-top: 30px;
     a {
@@ -41,7 +45,11 @@ export const Desc = styled.div`
   @media (max-width: 1080px) {
     flex-direction: column;
     row-gap: 61px;
-    padding-top: 50px;
+    padding-top: 45px;
+  }
+  @media (max-width: 760px) {
+    row-gap: 30px;
+    padding-top: 25px;
   }
 `;
 

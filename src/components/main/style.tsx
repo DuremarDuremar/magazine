@@ -9,6 +9,9 @@ export const Content = styled.section`
 export const Logo = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 760px) {
+    justify-content: center;
+  }
   div,
   ul {
     display: flex;
@@ -43,6 +46,11 @@ export const Title = styled.div`
   justify-content: center;
   flex: 50%;
   z-index: 1;
+  @media (max-width: 760px) {
+    align-items: center;
+    text-align: center;
+    padding-top: 38px;
+  }
 
   h2 {
     max-width: 676px;
@@ -55,12 +63,23 @@ export const Title = styled.div`
       font-size: 40px;
       line-height: 49px;
     }
+    @media (max-width: 760px) {
+      font-size: 25px;
+      line-height: 25px;
+      max-width: 194px;
+      text-align: center;
+    }
   }
   h5 {
     font-size: 24px;
     line-height: 28px;
     font-weight: 300;
     margin: 10px 0 20px;
+    @media (max-width: 760px) {
+      font-size: 20px;
+      line-height: 23px;
+      text-align: center;
+    }
   }
   button {
     @media (min-width: 1080px) {
@@ -76,6 +95,12 @@ export const Title = styled.div`
       font-size: 15px;
       line-height: 18px;
       padding: 6px 0;
+    }
+    @media (max-width: 760px) {
+      width: 93px;
+      height: 28px;
+      font-size: 10px;
+      line-height: 12px;
     }
     background: linear-gradient(95.2deg, #b90160 2.23%, #2e3192 99.51%);
     border-radius: 7px;
