@@ -67,11 +67,18 @@ export const Block = styled.div`
   h3 {
     padding-left: 22px;
     padding-right: 33px;
+    @media (max-width: 565px) {
+      padding: 0 5px;
+    }
   }
   h3 {
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
+    @media (max-width: 760px) {
+      font-size: 30px;
+      line-height: 35px;
+    }
   }
   div {
     font-size: 14px;

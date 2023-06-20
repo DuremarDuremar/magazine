@@ -5,6 +5,9 @@ export const Content = styled.div`
   min-height: 1580px;
   padding: 50px 78px 0;
   position: relative;
+  @media (max-width: 565px) {
+    padding: 50px 30px 0;
+  }
 `;
 
 export const Back = styled.div`

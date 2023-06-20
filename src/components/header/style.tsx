@@ -22,6 +22,10 @@ export const Content = styled.header`
     height: 99px;
     justify-content: space-evenly;
   }
+  @media (max-width: 565px) {
+    padding: 0 25px;
+  }
+
   p {
     font-size: 17px;
     line-height: 16px;

@@ -65,6 +65,10 @@ export const Review = styled.div`
   }
   @media (max-width: 1080px) {
   }
+  @media (max-width: 565px) {
+    max-width: 267px;
+    min-height: 210px;
+  }
 
   flex-direction: column;
   align-items: center;
@@ -85,11 +89,16 @@ export const Review = styled.div`
     font-size: 18px;
     line-height: 21px;
     text-align: center;
+    padding: 0 4px;
     @media (min-width: 1080px) {
     }
     @media (max-width: 1080px) {
       padding-top: 63px;
       margin: 0px auto;
+    }
+    @media (max-width: 565px) {
+      font-size: 15px;
+      line-height: 17px;
     }
   }
   div {

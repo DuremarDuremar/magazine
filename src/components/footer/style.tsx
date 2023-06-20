@@ -23,6 +23,16 @@ export const Blocks = styled.div`
   display: flex;
   justify-content: space-between;
   column-gap: 6px;
+  @media (max-width: 760px) {
+    flex-direction: column;
+    align-items: center;
+    div:first-child {
+      order: 1;
+    }
+    div:last-child {
+      order: 2;
+    }
+  }
 `;
 export const Block = styled.div`
   display: flex;

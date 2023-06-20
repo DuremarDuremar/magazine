@@ -63,7 +63,7 @@ export const Title = styled.div`
       font-size: 40px;
       line-height: 49px;
     }
-    @media (max-width: 760px) {
+    @media (max-width: 565px) {
       font-size: 25px;
       line-height: 25px;
       max-width: 194px;
@@ -75,7 +75,7 @@ export const Title = styled.div`
     line-height: 28px;
     font-weight: 300;
     margin: 10px 0 20px;
-    @media (max-width: 760px) {
+    @media (max-width: 565px) {
       font-size: 20px;
       line-height: 23px;
       text-align: center;
@@ -96,7 +96,7 @@ export const Title = styled.div`
       line-height: 18px;
       padding: 6px 0;
     }
-    @media (max-width: 760px) {
+    @media (max-width: 565px) {
       width: 93px;
       height: 28px;
       font-size: 10px;
