@@ -9,6 +9,9 @@ export const Content = styled.footer`
   @media (max-width: 1080px) {
     padding: 60px 10px 0px;
   }
+  @media (max-width: 760px) {
+    padding: 30px 10px 0px;
+  }
   max-width: 1295px;
   width: 100%;
   height: 284px;
@@ -26,6 +29,7 @@ export const Blocks = styled.div`
   @media (max-width: 760px) {
     flex-direction: column;
     align-items: center;
+    row-gap: 16px;
     div:first-child {
       order: 1;
     }
@@ -38,16 +42,28 @@ export const Block = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  @media (max-width: 760px) {
+    svg {
+      margin: 0px auto;
+    }
+  }
+
   h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     text-align: left;
+    @media (max-width: 760px) {
+      text-align: center;
+    }
   }
   p {
     max-width: 224px;
     font-size: 14px;
     line-height: 16px;
+    @media (max-width: 760px) {
+      text-align: center;
+    }
   }
   svg {
     cursor: pointer;
