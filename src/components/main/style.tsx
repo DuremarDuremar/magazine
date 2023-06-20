@@ -20,6 +20,11 @@ export const Logo = styled.div`
     font-size: 36px;
     line-height: 42px;
     padding-left: 11px;
+
+    @media (max-width: 760px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
   }
   ul {
     column-gap: 25px;
@@ -90,4 +95,7 @@ export const Title = styled.div`
 export const Shape = styled.div`
   flex: 50%;
   z-index: 1;
+
+  img {
+  }
 `;

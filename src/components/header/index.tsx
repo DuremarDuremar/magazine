@@ -7,9 +7,23 @@ import { ReactComponent as SvgInsta } from "../../assets/insta.svg";
 
 interface IProps {
   res1080: boolean;
+  res760: boolean;
 }
 
-const Header: FC<IProps> = ({ res1080 }) => {
+const Header: FC<IProps> = ({ res1080, res760 }) => {
+  if (!res760) {
+    return (
+      <Content>
+        <div>
+          +375 29 292-29-29 (VEL)
+          <br />
+          +375 33 333-33-33 (МТС)
+        </div>
+        <p>ваш город</p>
+      </Content>
+    );
+  }
+
   return (
     <Content>
       {res1080 && (

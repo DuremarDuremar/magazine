@@ -17,6 +17,16 @@ export const Content = styled.header`
   div:not(:first-child) {
     cursor: pointer;
   }
+  @media (max-width: 760px) {
+    flex-direction: column;
+    height: 99px;
+    justify-content: space-evenly;
+  }
+  p {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 300;
+  }
 `;
 
 export const Block = styled.div<{ cg: string }>`

@@ -14,8 +14,7 @@ import { Global, Content } from "./style";
 
 const App = () => {
   const res1080 = useMediaQuery({ query: "(min-width: 1080px)" });
-  const res730 = useMediaQuery({ query: "(min-width: 730px)" });
-  const res520 = useMediaQuery({ query: "(min-width: 520px)" });
+  const res760 = useMediaQuery({ query: "(min-width: 760px)" });
 
   const [modal, setModal] = useState(false);
 
@@ -23,9 +22,9 @@ const App = () => {
     <>
       <Global />
       <Content modal={modal}>
-        <Header res1080={res1080} />
+        <Header res1080={res1080} res760={res760} />
         <Layout>
-          <Main setModal={setModal} res1080={res1080} />
+          <Main setModal={setModal} res1080={res1080} res760={res760} />
           <Info />
         </Layout>
         <Reviews res1080={res1080} />

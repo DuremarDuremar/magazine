@@ -2,7 +2,13 @@ import styled from "styled-components";
 
 export const Content = styled.footer`
   margin: 20px auto 10px;
-  padding: 160px 20px 0px;
+
+  @media (min-width: 1080px) {
+    padding: 160px 20px 0px;
+  }
+  @media (max-width: 1080px) {
+    padding: 60px 10px 0px;
+  }
   max-width: 1295px;
   width: 100%;
   height: 284px;
@@ -16,6 +22,7 @@ export const Blocks = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  column-gap: 6px;
 `;
 export const Block = styled.div`
   display: flex;

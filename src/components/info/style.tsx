@@ -33,14 +33,15 @@ export const Title = styled.div`
 export const Desc = styled.div`
   display: flex;
 
-  padding-top: 100px;
   @media (min-width: 1080px) {
     flex-direction: row;
     column-gap: 61px;
+    padding-top: 100px;
   }
   @media (max-width: 1080px) {
     flex-direction: column;
     row-gap: 61px;
+    padding-top: 50px;
   }
 `;
 
