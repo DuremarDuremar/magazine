@@ -7,10 +7,10 @@ export const Content = styled.footer`
     padding: 160px 20px 0px;
   }
   @media (max-width: 1080px) {
-    padding: 60px 10px 0px;
+    padding: 60px 20px 0px;
   }
   @media (max-width: 760px) {
-    padding: 30px 10px 0px;
+    padding: 30px 10px 20px;
   }
   max-width: 1295px;
   width: 100%;
