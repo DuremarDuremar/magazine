@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.js": "/magazine/static/js/main.68e91909.js",
+    "static/media/shape.png": "/magazine/static/media/shape.9264945e06260e3a1340.png",
+    "static/media/desk_3.jpg": "/magazine/static/media/desk_3.0d450751427762bd1593.jpg",
+    "static/media/desk_2.jpg": "/magazine/static/media/desk_2.9b9ea7e75cfd18f655dc.jpg",
+    "static/media/desk_1.jpg": "/magazine/static/media/desk_1.2c3d25f7ab1522c72fc0.jpg",
+    "static/media/backModal.jpg": "/magazine/static/media/backModal.6826490fdb9453550c06.jpg",
+    "static/media/footerInsta.svg": "/magazine/static/media/footerInsta.a4bc0242d8e68ad16701a034e183f983.svg",
+    "static/media/back.png": "/magazine/static/media/back.10fba9616ed221391a41.png",
+    "static/media/otz2.png": "/magazine/static/media/otz2.f76be199dfa5a2c4f447.png",
+    "static/media/otz3.png": "/magazine/static/media/otz3.e7d342d0bfe43046a269.png",
+    "static/media/insta.svg": "/magazine/static/media/insta.d37be85ab495d5c934caeb96d11653fa.svg",
+    "static/media/phone.svg": "/magazine/static/media/phone.935a2e10fb3541bc218d77f50aa01a3d.svg",
+    "static/media/logo.svg": "/magazine/static/media/logo.5e389bcf697ea1e3e95b4912fa6660f4.svg",
+    "static/media/city.svg": "/magazine/static/media/city.dc5286fc5b6dfd110363bd72a530923e.svg",
+    "index.html": "/magazine/index.html",
+    "static/media/dot_1.svg": "/magazine/static/media/dot_1.e1f1a262bc7a7b72b15c4d0d8440d543.svg",
+    "static/media/dot_2.svg": "/magazine/static/media/dot_2.65ae006c2aef17adcc89b963064dcfd3.svg",
+    "static/media/dot_5.svg": "/magazine/static/media/dot_5.e3e130f8d92c49a401c41d2ff2c18d3c.svg",
+    "static/media/dot_4.svg": "/magazine/static/media/dot_4.ed6e96849860e25f6db20481869dadf5.svg",
+    "static/media/dot_3.svg": "/magazine/static/media/dot_3.92d69e4fe66be1bc3d79586998d25d8b.svg",
+    "static/media/dot_6.svg": "/magazine/static/media/dot_6.79d6bb225204c996217bed9e9fa53baa.svg",
+    "static/media/dot_10.svg": "/magazine/static/media/dot_10.5d3fe72b54b52444ef06ad7e06e13cb5.svg",
+    "static/media/dot_8.svg": "/magazine/static/media/dot_8.a412b8ed21abda3539fcc231a87ef51b.svg",
+    "static/media/dot_9.svg": "/magazine/static/media/dot_9.a8564bcf7c59a64d245283a59e30f081.svg",
+    "static/media/dot_7.svg": "/magazine/static/media/dot_7.895fc37365b370d52aa7115d0d2ff5dc.svg",
+    "main.68e91909.js.map": "/magazine/static/js/main.68e91909.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.68e91909.js"
+  ]
+}
