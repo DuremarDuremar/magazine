@@ -42,7 +42,6 @@ export const Block = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  border: 1px solid red;
   @media (max-width: 760px) {
     svg {
       margin: 0px auto;
